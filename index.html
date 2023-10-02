@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Martian+Mono:wght@700&family=Permanent+Marker&family=Skranji&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <section class="row">
+            <div class="col-12 text-center py-3">
+                <h1>PIG MINER</h1>
+            </div>
+        </section>
+
+    </header>
+
+    <main class="container-fluid text-dark fw-bold ">
+        <section class="row d-flex justify-content-around pt-4 fs-3">
+            <div class="col-8 col-md-2 cards">
+                <p>Current Bacon</p>
+                <p class="mb-0 text-center" id="bacon">0</p>
+                <marquee behavior="alternate" direction="right" scrollamount="6">
+                    <marquee behavior="alternate" direction="up" scrollamount="6">
+                        <p class="mb-5 fs-1 mdi mdi-pig text-light"></p>
+                    </marquee>
+                </marquee>
+            </div>
+            <div class="col-8 col-md-6 text-center">
+                <img onclick="mineBacon()" role="button" class="pig-button" src="IMG-9931.png" alt="Pig">
+            </div>
+            <div class="col-8 col-md-2 cards">
+                <p>Bacon taken per click</p>
+                <p id="power" class="mb-0 text-center">0</p>
+                <p>Bacon per auto click</p>
+                <p class="mb-0 text-center" id="auto power">0</p>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-12">
+                <section class="row d-flex justify-content-around py-4">
+                    <div class="col-9 col-md-3 cards fs-3 my-4">
+                        <div>
+                            <p>Click Upgrades</p>
+                            <button id="chain click"
+                                onclick="buyUpgrade('Chain'); chainClickInfo(); minePower('Chain')">Chain
+                                price: 5 dmg: 2</button>
+                            <button id="gun click"
+                                onclick="buyUpgrade('Stun Gun'); gunClickInfo(); minePower('Stun Gun')">Stun Gun
+                                price: 50 dmg: 10</button>
+                        </div>
+
+                    </div>
+                    <div class="col-9 col-md-3 cards fs-3">
+                        <div>
+                            <p>Auto Upgrades</p>
+                            <button id="knife click"
+                                onclick="buyAutoUpgrade('Butcher Knife'); mineAutoPower('Butcher Knife'); knifeClickInfo()">Butcher
+                                Knife Price: 100 Dmg: 20</button>
+                            <button id="saw click"
+                                onclick="buyAutoUpgrade('Bone Saw'); mineAutoPower('Bone Saw'); sawClickInfo()">Bone Saw
+                                price:
+                                1000 dmg: 40</button>
+                        </div>
+                    </div>
+                    <div class="col-9 col-md-3 cards fs-5 my-4">
+                        <div>
+                            <p>Upgrades Purchased</p>
+                            <p class="mb-0" id="chain">Chain's: 0</p>
+                            <p class="mb-0" id="stun gun">Stun Gun's: 0</p>
+                            <p class="mb-0" id="knife"> Knive's: 0</p>
+                            <p class="mb-0" id="bonesaw">Bone Saw's: 0</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

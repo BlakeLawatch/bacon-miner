@@ -1,0 +1,30 @@
+* {
+    user-select: none
+}
+
+body {
+    background-image: url(https://img.freepik.com/premium-vector/farm-scene-with-windmill-barn_1308-91020.jpg);
+    background-size: cover;
+    min-height: 100%;
+}
+
+header {
+    font-family: 'Martian Mono', monospace;
+}
+
+.pig-button {
+    height: 40vh;
+}
+
+button {
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgb(203, 35, 63);
+    background-color: pink;
+    margin: .2em;
+}
+
+.cards {
+    background-color: #d96276c0;
+    border: 2px solid rgb(90, 88, 88);
+    border-radius: 10px;
+}
